@@ -162,8 +162,8 @@ function LinkRow({
 export function InputLink() {
   const [links, setLinks] = useState<LinkItem[]>([{ id: makeId(), value: "" }]);
   const [paramBase, setParamBase] = useState("");
-  const [rangeStart, setRangeStart] = useState("1");
-  const [rangeEnd, setRangeEnd] = useState("1");
+  const [rangeStart, setRangeStart] = useState("0");
+  const [rangeEnd, setRangeEnd] = useState("0");
   const [ascending, setAscending] = useState(true);
 
   const addInput = () => {
@@ -256,7 +256,7 @@ export function InputLink() {
                 type="number"
                 min={1}
                 className="w-24"
-                placeholder="1"
+                placeholder="0"
                 value={rangeStart}
                 onChange={(e) => setRangeStart(e.target.value)}
               />
@@ -266,7 +266,7 @@ export function InputLink() {
                 type="number"
                 min={1}
                 className="w-24"
-                placeholder="10"
+                placeholder="0"
                 value={rangeEnd}
                 onChange={(e) => setRangeEnd(e.target.value)}
               />
