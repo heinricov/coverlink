@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "COVERLINK",
+  title: "COVER LINK",
   description:
     "Buat kombinasi tautan otomatis lalu buka atau kelola semuanya sekaligus.",
 };
