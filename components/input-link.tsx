@@ -145,7 +145,7 @@ function LinkRow({
           placeholder="Enter a link"
           value={link}
           onChange={(e) => onChange(e.target.value)}
-          className="sm:min-w-[45rem]"
+          className="sm:min-w-180"
         />
       </div>
       <LinkActions
